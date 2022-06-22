@@ -1,3 +1,5 @@
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
 enum Flavor {
   LOCAL,
   DEV,
@@ -21,5 +23,7 @@ class F {
         return 'title';
     }
   }
-
 }
+
+// 初期値を `null` にする場合
+final flavorProvider = Provider<Flavor>((ref) => Flavor.LOCAL);
