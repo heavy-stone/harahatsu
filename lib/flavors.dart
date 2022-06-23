@@ -1,9 +1,9 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 enum Flavor {
-  LOCAL,
-  DEV,
-  PROD,
+  local,
+  dev,
+  prod,
 }
 
 class F {
@@ -13,11 +13,11 @@ class F {
 
   static String get title {
     switch (appFlavor) {
-      case Flavor.LOCAL:
+      case Flavor.local:
         return 'アプリ名（local）';
-      case Flavor.DEV:
+      case Flavor.dev:
         return 'アプリ名（dev）';
-      case Flavor.PROD:
+      case Flavor.prod:
         return 'アプリ名';
       default:
         return 'title';
@@ -26,4 +26,4 @@ class F {
 }
 
 // 初期値を `null` にする場合
-final flavorProvider = Provider<Flavor>((ref) => Flavor.LOCAL);
+final flavorProvider = Provider<Flavor>((ref) => Flavor.local);

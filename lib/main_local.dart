@@ -2,6 +2,6 @@ import 'flavors.dart';
 import 'run.dart';
 
 void main() {
-  F.appFlavor = Flavor.LOCAL;
+  F.appFlavor = Flavor.local;
   run(flavor: F.appFlavor!);
 }

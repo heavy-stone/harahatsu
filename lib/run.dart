@@ -11,7 +11,7 @@ Future<void> run({required Flavor flavor}) async {
         // ここで実際の Flavor をセットする
         flavorProvider.overrideWithValue(flavor),
       ],
-      child: App(),
+      child: const App(),
     ),
   );
 }
